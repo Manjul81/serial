@@ -30,6 +30,8 @@ class LoginManager:
         def log(msg):
             if output_callback:
                 output_callback(msg)
+            else:
+                print(msg)
 
         if not self.login_id or not self.password:
             log("[Error] Login credentials not set in keyring.")

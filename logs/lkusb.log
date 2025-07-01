@@ -1,0 +1,4 @@
+2025-07-02 00:48:53 - INFO - [*] Sending command: lkusb
+2025-07-02 00:48:53 - INFO - lkusb
+2025-07-02 00:48:53 - INFO - -sh: lkusb: command not found
+2025-07-02 00:48:54 - INFO - root@localhost:~#

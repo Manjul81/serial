@@ -1,0 +1,90 @@
+2025-07-02 00:49:21 - INFO - [*] Sending command: dmesg
+2025-07-02 00:49:21 - INFO - dmesg
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mBooting Linux on physical CPU 0x0
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mLinux version 5.10.0-g3f995f8e0b (oe-user@oe-host) (arm-poky-linux-gnueabi-gcc (GCC) 9.5.0, GNU ld (GNU Binutils) 2.34.0.20200910) #1 Sun Dec 13 22:41:30 UTC 2020
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mCPU[0m: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c5387d
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mCPU[0m: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mOF[0m: fdt: Machine model: TI AM437x SK EVM
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mMemory policy[0m: Data cache writeback
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mefi[0m: UEFI not found.
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mcma[0m: Reserved 24 MiB at 0xbe800000
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mZone ranges:
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m  Normal   [mem 0x0000000080000000-0x00000000afffffff]
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m  HighMem  [mem 0x00000000b0000000-0x00000000bfffffff]
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mMovable zone start for each node
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mEarly memory node ranges
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33m  node   0[0m: [mem 0x0000000080000000-0x00000000bfffffff]
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mInitmem setup node 0 [mem 0x0000000080000000-0x00000000bfffffff]
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mOn node 0 totalpages[0m: 262144
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33m  Normal zone[0m: 1728 pages used for memmap
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33m  Normal zone[0m: 0 pages reserved
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33m  Normal zone[0m: 196608 pages, LIFO batch:63
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33m  HighMem zone[0m: 65536 pages, LIFO batch:15
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mCPU[0m: All CPU(s) started in SVC mode.
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mAM437x ES1.2 (sgx neon)
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mpcpu-alloc[0m: s0 r0 d32768 u32768 alloc=1*32768
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mpcpu-alloc[0m: [0] 0
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mBuilt 1 zonelists, mobility grouping on.  Total pages[0m: 260416
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mKernel command line[0m: console=ttyO0,115200n8 initrd=0x88080000,0x10d6ca9 root=/dev/ram0 rw rw rootfstype=ext2
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mDentry cache hash table entries[0m: 131072 (order: 7, 524288 bytes, linear)
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mInode-cache hash table entries[0m: 65536 (order: 6, 262144 bytes, linear)
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mmem auto-init[0m: stack:off, heap alloc:off, heap free:off
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mMemory[0m: 981308K/1048576K available (9216K kernel code, 469K rwdata, 3316K rodata, 1024K init, 255K bss, 42692K reserved, 24576K cma-reserved, 237568K highmem)
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mNR_IRQS[0m: 16, nr_irqs: 16, preallocated irqs: 16
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mL2C[0m[1m: platform modifies aux control register: 0x0e030000 -> 0x3e430000[0m
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mL2C[0m[1m: DT/platform modifies aux control register: 0x0e030000 -> 0x3e430000[0m
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mL2C-310 enabling early BRESP for Cortex-A9
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mOMAP L2C310[0m: ROM does not support power control setting
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mL2C-310 dynamic clock gating disabled, standby mode disabled
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0mL2C-310 cache controller enabled, 16 ways, 256 kB
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mL2C-310[0m: CACHE_ID 0x410000c9, AUX_CTRL 0x4e430000
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mrandom[0m: get_random_bytes called from start_kernel+0x310/0x4d0 with crng_init=0
+2025-07-02 00:49:21 - INFO - [32m[    0.000000] [0m[33mTI gptimer clocksource[0m: always-on /ocp@44000000/interconnect@44c00000/segment@200000/target-module@31000
+2025-07-02 00:49:21 - INFO - [32m[    0.000007] [0m[33msched_clock[0m: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+2025-07-02 00:49:21 - INFO - [32m[    0.000022] [0m[33mclocksource[0m: dmtimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+2025-07-02 00:49:21 - INFO - [32m[    0.000147] [0m[33mOMAP clocksource[0m: 32k_counter at 32768 Hz
+2025-07-02 00:49:21 - INFO - [32m[    0.000161] [0m[33mclocksource[0m: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+2025-07-02 00:49:21 - INFO - [32m[    0.000446] [0m[33mTI gptimer clockevent[0m: 24000000 Hz at /ocp@44000000/interconnect@48000000/segment@0/target-module@40000
+2025-07-02 00:49:21 - INFO - [32m[    0.001811] [0m[33mConsole[0m: colour dummy device 80x30
+2025-07-02 00:49:21 - INFO - [32m[    0.001848] [0m[33mWARNING[0m[31m: Your 'console=ttyO0' has been replaced by 'ttyS0'[0m
+2025-07-02 00:49:21 - INFO - [32m[    0.001855] [0m[31mThis ensures that you still see kernel messages. Please[0m
+2025-07-02 00:49:21 - INFO - [32m[    0.001860] [0m[31mupdate your kernel commandline.[0m
+2025-07-02 00:49:21 - INFO - [32m[    0.001905] [0mCalibrating delay loop... 1987.37 BogoMIPS (lpj=9936896)
+2025-07-02 00:49:21 - INFO - [32m[    0.057940] [0m[33mpid_max[0m: default: 32768 minimum: 301
+2025-07-02 00:49:21 - INFO - [32m[    0.058081] [0m[33mLSM[0m: Security Framework initializing
+2025-07-02 00:49:21 - INFO - [32m[    0.058164] [0m[33mMount-cache hash table entries[0m: 2048 (order: 1, 8192 bytes, linear)
+2025-07-02 00:49:21 - INFO - [32m[    0.058188] [0m[33mMountpoint-cache hash table entries[0m: 2048 (order: 1, 8192 bytes, linear)
+2025-07-02 00:49:21 - INFO - [32m[    0.058968] [0m[33mCPU[0m: Testing write buffer coherency: ok
+2025-07-02 00:49:21 - INFO - [32m[    0.059033] [0m[33mCPU0[0m: Spectre v2: using BPIALL workaround
+2025-07-02 00:49:21 - INFO - [32m[    0.059575] [0mSetting up static identity map for 0x80100000 - 0x80100060
+2025-07-02 00:49:21 - INFO - [32m[    0.059784] [0mEFI services will not be available.
+2025-07-02 00:49:21 - INFO - [32m[    0.060219] [0m[33mdevtmpfs[0m: initialized
+2025-07-02 00:49:21 - INFO - [32m[    0.072506] [0m[33mVFP support v0.3[0m: implementor 41 architecture 3 part 30 variant 9 rev 4
+2025-07-02 00:49:21 - INFO - [32m[    0.072787] [0m[33mclocksource[0m: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+2025-07-02 00:49:21 - INFO - [32m[    0.072812] [0m[33mfutex hash table entries[0m: 256 (order: -1, 3072 bytes, linear)
+2025-07-02 00:49:21 - INFO - [32m[    0.074506] [0m[33mpinctrl core[0m: initialized pinctrl subsystem
+2025-07-02 00:49:21 - INFO - [32m[    0.075322] [0mDMI not present or invalid.
+2025-07-02 00:49:21 - INFO - [32m[    0.075747] [0m[33mNET[0m: Registered protocol family 16
+2025-07-02 00:49:21 - INFO - [32m[    0.077308] [0m[33mDMA[0m: preallocated 256 KiB pool for atomic coherent allocations
+2025-07-02 00:49:21 - INFO - [32m[    0.084342] [0m[33mthermal_sys[0m: Registered thermal governor 'fair_share'
+2025-07-02 00:49:21 - INFO - [32m[    0.084353] [0m[33mthermal_sys[0m: Registered thermal governor 'bang_bang'
+2025-07-02 00:49:21 - INFO - [32m[    0.084367] [0m[33mthermal_sys[0m: Registered thermal governor 'step_wise'
+2025-07-02 00:49:21 - INFO - [32m[    0.084374] [0m[33mthermal_sys[0m: Registered thermal governor 'user_space'
+2025-07-02 00:49:21 - INFO - [32m[    0.084711] [0m[33mcpuidle[0m: using governor ladder
+2025-07-02 00:49:21 - INFO - [32m[    0.084723] [0m[33mcpuidle[0m: using governor menu
+2025-07-02 00:49:21 - INFO - [32m[    0.821965] [0mNo ATAGs?
+2025-07-02 00:49:21 - INFO - [32m[    0.821997] [0m[33mhw-breakpoint[0m: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+2025-07-02 00:49:21 - INFO - [32m[    0.822006] [0m[33mhw-breakpoint[0m: maximum watchpoint size is 4 bytes.
+2025-07-02 00:49:21 - INFO - [32m[    0.844313] [0m[33mreg-fixed-voltage fixedregulator-mmcwl[0m: GPIO lookup for consumer (null)
+2025-07-02 00:49:21 - INFO - [32m[    0.844327] [0m[33mreg-fixed-voltage fixedregulator-mmcwl[0m: using device tree for GPIO lookup
+2025-07-02 00:49:21 - INFO - [32m[    0.844357] [0m[33mof_get_named_gpiod_flags[0m: can't parse 'gpios' property of node '/fixedregulator-mmcwl[0]'
+2025-07-02 00:49:21 - INFO - [32m[    0.844381] [0m[33mreg-fixed-voltage fixedregulator-mmcwl[0m: No GPIO consumer (null) found
+2025-07-02 00:49:21 - INFO - [32m[    0.846823] [0m[33miommu[0m: Default domain type: Translated
+2025-07-02 00:49:21 - INFO - [32m[    0.848897] [0m[33mvgaarb[0m: loaded
+2025-07-02 00:49:21 - INFO - [32m[    0.849611] [0mSCSI subsystem initialized
+2025-07-02 00:49:21 - INFO - [32m[    0.849820] [0mlibata version 3.00 loaded.
+2025-07-02 00:49:21 - INFO - [32m[    0.850032] [0m[33musbcore[0m: registered new interface driver usbfs
+2025-07-02 00:49:21 - INFO - [32m[    0.850080] [0m[33musbcore[0m: registered new interface driver hub
+2025-07-02 00:49:21 - INFO - [32m[    0.850125] [0m[33musbcore[0m: registered new device driver usb
+2025-07-02 00:49:21 - INFO - [32m[    0.850784] [0m[33mpps_core[0m: LinuxPPS API ver. 1 registered
+2025-07-02 00:49:21 - INFO - [32m[    0.850796] [0m[33mpps_core[0m: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>

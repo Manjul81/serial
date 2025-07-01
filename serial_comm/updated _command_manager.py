@@ -17,7 +17,7 @@ class CommandManager:
         """
         # Create a safe filename based on command and timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        safe_command = "".join(c if c.isalnum() else "_" for c in command.strip().split()[0])
+        safe_command = re.sub(r'\W+', '_', command.strip())[:30]
         log_filename = os.path.join(self.logs_dir, f"{safe_command}_{timestamp}.log")
 
         # Create logger

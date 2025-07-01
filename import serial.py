@@ -2,39 +2,54 @@ import serial
 import threading
 import configparser
 import serial.tools.list_ports
-import os
+
+
 class SerialComm:
-    
-
-    print("Current working directory:", os.getcwd())
-    print("Looking for config file at:", os.path.abspath('config.ini'))
-
     def __init__(self, config_file='config.ini', timeout=1):
         config = configparser.ConfigParser()
         config.read(config_file)
 
-        # No default values; require both port and baudrate in config
-        try:
-            if config.has_section('SerialPort'):
-                if config.has_option('SerialPort', 'port'):
-                    port = config.get('SerialPort', 'port')
-                else:
-                    raise ValueError("Missing 'port' in [SerialPort] section of config.ini")
+        default_port = None  # We'll try to pick from available ports if not specified
+        default_baudrate = 115200
 
-                if config.has_option('SerialPort', 'baudrate'):
-                    baudrate = config.getint('SerialPort', 'baudrate')
-                else:
-                    raise ValueError("Missing 'baudrate' in [SerialPort] section of config.ini")
+        # Get baudrate from config or use default
+        try:
+            if config.has_section('SerialPort') and config.has_option('SerialPort', 'baudrate'):
+                baudrate = config.getint('SerialPort', 'baudrate')
             else:
-                raise ValueError("Missing [SerialPort] section in config.ini")
-        except ValueError as e:
-            raise serial.SerialException(f"Configuration error: {e}")
+                baudrate = default_baudrate
+        except ValueError:
+            print("Invalid baudrate in config; using default.")
+            baudrate = default_baudrate
+
+        # Get port from config if available
+        if config.has_section('SerialPort') and config.has_option('SerialPort', 'port'):
+            port = config.get('SerialPort', 'port')
+        else:
+            port = default_port
+
+        # List available COM ports
+        available_ports = self.list_com_ports()
+        print(f"Available COM ports: {available_ports}")
+
+        # If no port specified or specified port not available, pick the first available port
+        if port is None or port not in available_ports:
+            if available_ports:
+                print(f"Configured port '{port}' not found. Using first available port: {available_ports[0]}")
+                port = available_ports[0]
+            else:
+                raise serial.SerialException("No COM ports available on the system.")
 
         self.ser = serial.Serial()
         self.ser.port = port
         self.ser.baudrate = baudrate
         self.ser.timeout = timeout
         self.lock = threading.Lock()
+
+    @staticmethod
+    def list_com_ports():
+        ports = serial.tools.list_ports.comports()
+        return [port.device for port in ports]
 
     def open(self):
         try:

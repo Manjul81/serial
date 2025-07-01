@@ -1,0 +1,15 @@
+2025-07-02 00:49:04 - INFO - [*] Sending command: lsblk
+2025-07-02 00:49:04 - INFO - lsblk
+2025-07-02 00:49:04 - INFO - NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+2025-07-02 00:49:04 - INFO - loop0         7:0    0  203M  1 loop /
+2025-07-02 00:49:04 - INFO - mtdblock0    31:0    0  512K  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock1    31:1    0  512K  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock2    31:2    0   64K  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock3    31:3    0   64K  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock4    31:4    0   64K  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock5    31:5    0    8M  0 disk
+2025-07-02 00:49:04 - INFO - mtdblock6    31:6    0 54.8M  0 disk
+2025-07-02 00:49:04 - INFO - mmcblk1     179:0    0 29.7G  0 disk
+2025-07-02 00:49:04 - INFO - |-mmcblk1p1 179:1    0    2G  0 part
+2025-07-02 00:49:04 - INFO - `-mmcblk1p2 179:2    0    2G  0 part /mnt/log
+2025-07-02 00:49:05 - INFO - root@localhost:~#

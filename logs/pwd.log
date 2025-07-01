@@ -1,0 +1,12 @@
+2025-07-02 00:38:54 - INFO - [*] Sending command: pwd
+2025-07-02 00:38:54 - INFO - pwd
+2025-07-02 00:38:54 - INFO - /home/root
+2025-07-02 00:38:55 - INFO - root@localhost:~#
+2025-07-02 00:38:55 - INFO - [*] Command output appended to c:\Users\mkasg\OneDrive\Desktop\serial\logs\pwd.log
+2025-07-02 00:43:00 - INFO - [*] Sending command: pwd
+2025-07-02 00:43:01 - INFO - [*] Command output appended to c:\Users\mkasg\OneDrive\Desktop\serial\logs\pwd.log
+2025-07-02 00:48:25 - INFO - [*] Sending command: pwd
+2025-07-02 00:48:25 - INFO - pwd
+2025-07-02 00:48:25 - INFO - /home/root
+2025-07-02 00:48:26 - INFO - root@localhost:~#
+2025-07-02 01:05:31 - INFO - [*] Sending command: pwd
